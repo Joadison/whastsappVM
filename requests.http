@@ -1,0 +1,30 @@
+### Envio de Mensagens
+POST http://localhost:3001/chat/send-message HTTP/1.1
+content-type: application/json
+
+{
+    "to": "5585@c.us",
+    "message": "Olá"
+}
+
+### Pegar Mensagens
+GET http://localhost:3001/chat/get-all-messages/558599692700@c.us HTTP/1.1
+content-type: application/json
+
+### Envio de File
+POST http://localhost:3001/chat/send-file/1.png HTTP/1.1
+content-type: application/json
+
+{
+    "to": "558599692700@c.us"
+}
+
+###Envio em MASSA
+POST http://localhost:3001/chat/send-bulk-messages HTTP/1.1
+Content-Type: application/json 
+
+{
+  "users": ["99692700", "96617740", "89598993", "89929182", "96092562", "86764073", "87596656", "86220596"],
+  "message": "*Nossa novo Serviço, AGENDE!!!* https://vm-estetica-corporal.vercel.app/",
+  "imageUrl": "./vm.jpg"
+}

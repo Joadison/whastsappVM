@@ -1,0 +1,16 @@
+# Ignore arquivos de log
+*.log
+
+# Ignore arquivos de configuração do sistema operacional
+.DS_Store
+
+# Ignore pastas específicas
+/node_modules/
+/dist/
+/node_modules
+# Ignore arquivos de configuração de IDE
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
